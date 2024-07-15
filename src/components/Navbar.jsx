@@ -8,19 +8,35 @@ function Navbar() {
         var tl = gsap.timeline();
 
         tl.from(".logo-image",{
-            y:-30,
+            y:-100,
             opacity:0,
             duration:1,
-            delay:4
+            delay:5,
+            ease: "ease-in-out",
+            scrub:5,
+        })
+        tl.from(".menu-items",{
+            y:-100,
+            opacity:0,
+            ease: "ease-in-out",
+            stagger:0.1,
+            scrub: 5,
+        })
+        tl.from(".side-menu-continer",{
+            y:-100,
+            opacity:0,
+            ease: "ease-in-out",
+            stagger:0.2,
+            scrub: 5,
         })
     })
   return (
     <div className="navbar w-full pl-8 pr-12 py-4 flex items-center justify-between">
         <img className="logo-image w-16" src="/public/images/nike-black-logo.png" alt="" />
-        <div className="menu-items flex gap-5">
+        <div className="menu-items-container flex gap-5">
             {["New & Featured","Men","Women","Kids","Customize","SNKRS"].map((item,index)=>{
                 return (
-                    <a key={index}>{item}</a>
+                    <a className="menu-items" key={index}>{item}</a>
                 )
             })}
         </div>
@@ -31,10 +47,9 @@ function Navbar() {
                     </div>
                     <input className="w-20 outline-none bg-[#f5f5f5] text-sm" type="text" />
                 </div>
-                <a className="flex gap-1" href="">
-                    <img className="w-6" src="/public/images/profile.svg" alt="" />
-                    <img className="w-8" src="/public/images/cart.png" alt="" />
-
+                <a className="other-usermenu-items flex gap-1" href="">
+                    <img className="profile w-6" src="/public/images/profile.svg" alt="" />
+                    <img className="cart w-8" src="/public/images/cart.png" alt="" />
                 </a>
         </div>
     </div>
