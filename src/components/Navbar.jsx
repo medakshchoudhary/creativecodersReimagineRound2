@@ -41,7 +41,7 @@ function Navbar() {
             })}
         </div>
         <div className="side-menu-continer flex gap-1">
-                <div className="search-bar w-full flex items-center justify-center pr-2 bg-[#f5f5f5] rounded-full">
+                <div className="search-bar w-full flex items-center justify-start pr-2 bg-[#f5f5f5] rounded-full">
                     <div className="image-container w-8 h-8 mr-1 flex items-center justify-center hover:bg-[#CACACB] rounded-full">
                         <img className="w-6" src="/public/images/search-icon.png" alt="" />
                     </div>
