@@ -53,7 +53,14 @@ function LoadingAnimation() {
             delay:-2.8,
             ease: "Expo.easeInOut",
         })
-        
+        tl.to(".loader2",{
+            height:0,
+            duration:2.25,
+        })
+        tl.to(".loader3",{
+            height:0,
+            duration:2.25,
+        })
     })
   return (
     <div className="min-h-screen w-full">

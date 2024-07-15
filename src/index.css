@@ -3,6 +3,9 @@
     src: url('/fonts/HelveticaNowTextMedium.woff2') format('woff2');
 }
 
+html,body{
+    cursor: url('/public/images/nike-custom-cursor.png'), auto;
+}
 
 @tailwind base;
 @tailwind components;
