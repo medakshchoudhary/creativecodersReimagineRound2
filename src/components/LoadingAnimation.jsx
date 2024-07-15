@@ -55,15 +55,12 @@ function LoadingAnimation() {
         })
         tl.to(".loader2",{
             height:0,
-            duration:2.25,
         })
         tl.to(".loader3",{
             height:0,
-            duration:2.25,
         })
     })
   return (
-    <div className="min-h-screen w-full">
         <div className="loader1 h-[100vh] w-full font-HelveticaNowTextMedium text-white bg-black flex flex-col items-center justify-start">
             <div className="heading flex items-center justify-center mt-8 gap-2 overflow-hidden">
                 <img className="nike-white-logo w-12" src="/images/nike-white-logo.jpeg" alt="" />
@@ -78,7 +75,6 @@ function LoadingAnimation() {
             <div className="loader2 absolute w-full bottom-0 bg-[#9e9ea0]"></div>
             <div className="loader3 absolute w-full bottom-0 bg-white"></div>
         </div>
-    </div>
   )
 }
 
