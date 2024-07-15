@@ -61,7 +61,7 @@ function LoadingAnimation() {
         })
     })
   return (
-        <div className="loader1 h-[100vh] w-full font-HelveticaNowTextMedium text-white bg-black flex flex-col items-center justify-start">
+        <div className="loader1 h-[100vh] w-full text-white bg-black flex flex-col items-center justify-start">
             <div className="heading flex items-center justify-center mt-8 gap-2 overflow-hidden">
                 <img className="nike-white-logo w-12" src="/images/nike-white-logo.jpeg" alt="" />
             </div>

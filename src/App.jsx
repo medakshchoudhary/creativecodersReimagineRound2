@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div className="main w-full min-h-screen">
+    <div className="main w-full min-h-screen font-HelveticaNowTextMedium">
       <LoadingAnimation />
       <Navbar />
     </div>
