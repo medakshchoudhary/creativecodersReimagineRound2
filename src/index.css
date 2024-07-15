@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HelveticaNowTextMedium';
+    src: url('/public/fonts/HelveticaNowTextMedium.woff2') format('woff2');
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
