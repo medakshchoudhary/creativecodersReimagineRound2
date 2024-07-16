@@ -24,7 +24,7 @@ function Navbar() {
             y: -50,
             opacity: 0,
             ease: "ease-in-out",
-            stagger: 0.2,
+            stagger: 0.1,
             scrub: 5,
         });
     });
