@@ -5,6 +5,8 @@
 
 html,body{
     cursor: url('/images/nike-custom-cursor.png'), auto;  
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 input[type="text"], textarea,a {

@@ -44,6 +44,7 @@ function LoadingAnimation({ onComplete }) {
             duration: 2.25,
             delay: -1,
             ease: "Expo.easeInOut",
+            scrub:1,
         });
 
         tl.to(".loader2", {
@@ -51,6 +52,7 @@ function LoadingAnimation({ onComplete }) {
             duration: 2.25,
             delay: -3,
             ease: "Expo.easeInOut",
+            scrub:1,
         });
 
         tl.to(".loader3", {
@@ -62,14 +64,14 @@ function LoadingAnimation({ onComplete }) {
         tl.to(".loader2", {
             top:"0%",
             height: "0%",
-            duration: -3,
+            duration: -0.1,
             ease: "Expo.easeInOut",
         });
 
         tl.to(".loader3", {
             top:"0%",
             height: "0%",
-            duration: -3,
+            duration: -0.1,
             ease: "Expo.easeInOut",
         });
     });
