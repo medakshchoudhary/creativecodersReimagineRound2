@@ -4,11 +4,11 @@
 }
 
 html,body{
-    cursor: url('/public/images/nike-custom-cursor.png'), auto;  
+    cursor: url('/images/nike-custom-cursor.png'), auto;  
 }
 
 input[type="text"], textarea,a {
-    cursor: url('/public/images/nike-cursor-pointer.png'), auto;
+    cursor: url('/images/nike-cursor-pointer.png'), auto;
 }
 
 @tailwind base;
