@@ -35,7 +35,7 @@ const responsive = {
 function ShoeCarousel({ onShoeClick }) {
     return (
         <Carousel
-            className="mt-12 bg-green-500"
+            className="h-[28vh]"
             responsive={responsive}
             infinite={true}
             autoPlay={true}
@@ -44,11 +44,22 @@ function ShoeCarousel({ onShoeClick }) {
             arrows={true}
         >
             {shoeDetails.map((shoe, index) => (
-                <div key={index} className="carousel-item w-[40vw] flex items-center p-4 bg-blue-500" onClick={() => onShoeClick(shoe)}>
-                    <img src={shoe.src} alt={shoe.name} className="w-1/3" />
-                    <div className="shoe-info ml-4">
-                        <h2 className="shoe-name">{shoe.name}</h2>
-                        <h3 className="shoe-price">{shoe.price}</h3>
+                <div key={index} className="flex justify-center items-center mr-10">
+                    <div 
+                        className="carousel-item w-full h-[25vh] border-solid border-4 rounded-3xl flex items-center gap-5" 
+                        onClick={() => onShoeClick(shoe)}
+                    >
+                        <div className="image-container w-full h-full p-5 flex items-center justify-center">
+                            <img 
+                                src={shoe.src} 
+                                alt={shoe.name} 
+                                className="object-contain max-w-full max-h-full"
+                            />
+                        </div>
+                        <div className="shoe-info flex flex-col items-end whitespace-nowrap mr-4">
+                            <h2 className="shoe-name text-xl font-bold">{shoe.name}</h2>
+                            <h3 className="shoe-price text-lg">{shoe.price}</h3>
+                        </div>
                     </div>
                 </div>
             ))}
