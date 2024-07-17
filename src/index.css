@@ -9,7 +9,7 @@ html,body{
     user-select: none;
 }
 
-input[type="text"], textarea,a {
+input[type="text"], textarea,a,.carousel-item {
     cursor: url('/images/nike-cursor-pointer.png'), auto;
 }
 

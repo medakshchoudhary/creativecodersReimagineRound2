@@ -32,7 +32,7 @@ function Navbar() {
             <div className="menu-items-container flex gap-5">
                 {["New & Featured", "Men", "Women", "Kids", "Customize", "SNKRS"].map((item, index) => {
                     return (
-                        <a className="menu-items" key={index}>{item}</a>
+                        <a className="menu-items text-lg " key={index}>{item}</a>
                     );
                 })}
             </div>
@@ -41,7 +41,7 @@ function Navbar() {
                     <div className="image-container w-8 h-8 mr-1 flex items-center justify-center hover:bg-[#CACACB] rounded-full">
                         <img className="w-6" src="/images/search-icon.png" alt="" />
                     </div>
-                    <input className="w-32 outline-none bg-[#f5f5f5] text-sm" type="text" />
+                    <input className="w-32 outline-none bg-[#f5f5f5] text-sm" type="text" placeholder="Search Store" />
                 </div>
                 <a className="other-usermenu-items flex gap-1" href="">
                     <img className="profile w-6" src="/images/profile.svg" alt="" />
