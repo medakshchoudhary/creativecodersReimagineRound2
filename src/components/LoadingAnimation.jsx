@@ -6,7 +6,7 @@ function LoadingAnimation({ onComplete }) {
 
     useGSAP(()=>{
         var tl = gsap.timeline({
-            onComplete: onComplete // Call onComplete when the timeline completes
+            onComplete: onComplete
         });
 
         tl.from(".nike-white-logo", {
@@ -21,20 +21,17 @@ function LoadingAnimation({ onComplete }) {
             duration: 1,
             x: 60,
             stagger: 0.2,
-            scrub: 3,
         });
 
         tl.add([
             gsap.to(".start-text h1", {
                 duration: 1.5,
                 y: -100,
-                scrub: 3,
                 ease: "Expo.easeInOut"
             }),
             gsap.to(".nike-white-logo", {
                 duration: 1.5,
                 y: -100,
-                scrub: 5,
                 ease: "Expo.easeInOut"
             })
         ]);
@@ -44,7 +41,6 @@ function LoadingAnimation({ onComplete }) {
             duration: 2.25,
             delay: -1,
             ease: "Expo.easeInOut",
-            scrub:1,
         });
 
         tl.to(".loader2", {
@@ -52,7 +48,6 @@ function LoadingAnimation({ onComplete }) {
             duration: 2.25,
             delay: -3,
             ease: "Expo.easeInOut",
-            scrub:1,
         });
 
         tl.to(".loader3", {
@@ -62,17 +57,20 @@ function LoadingAnimation({ onComplete }) {
             ease: "Expo.easeInOut",
         });
         tl.to(".loader2", {
-            top:"-100%",
             height: "0%",
-            duration: -0.1,
+            duration: 0.1,
             ease: "Expo.easeInOut",
         });
 
         tl.to(".loader3", {
-            top:"-100%",
             height: "0%",
-            duration: -0.1,
+            duration: 0.1,
             ease: "Expo.easeInOut",
+            onComplete: () => {
+                document.querySelector('.loader1').style.display = 'none';
+                document.querySelector('.loader2').style.display = 'none';
+                document.querySelector('.loader3').style.display = 'none';
+            }
         });
     });
 

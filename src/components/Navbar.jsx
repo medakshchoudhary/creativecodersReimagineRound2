@@ -11,26 +11,23 @@ function Navbar() {
             y: -50,
             opacity: 0,
             ease: "ease-in-out",
-            scrub: 5,
         });
         tl.from(".menu-items", {
             y: -50,
             opacity: 0,
             ease: "ease-in-out",
             stagger: 0.1,
-            scrub: 5,
         });
         tl.from(".side-menu-continer", {
             y: -50,
             opacity: 0,
             ease: "ease-in-out",
             stagger: 0.1,
-            scrub: 5,
         });
     });
 
     return (
-        <div className="navbar w-full pl-8 pr-12 py-4 flex items-center justify-between">
+        <div className="navbar w-full pl-8 pr-8 py-4 flex items-center justify-between">
             <img className="logo-image w-16" src="/images/nike-black-logo.png" alt="" />
             <div className="menu-items-container flex gap-5">
                 {["New & Featured", "Men", "Women", "Kids", "Customize", "SNKRS"].map((item, index) => {
@@ -44,7 +41,7 @@ function Navbar() {
                     <div className="image-container w-8 h-8 mr-1 flex items-center justify-center hover:bg-[#CACACB] rounded-full">
                         <img className="w-6" src="/images/search-icon.png" alt="" />
                     </div>
-                    <input className="w-20 outline-none bg-[#f5f5f5] text-sm" type="text" />
+                    <input className="w-32 outline-none bg-[#f5f5f5] text-sm" type="text" />
                 </div>
                 <a className="other-usermenu-items flex gap-1" href="">
                     <img className="profile w-6" src="/images/profile.svg" alt="" />
