@@ -62,14 +62,14 @@ function LoadingAnimation({ onComplete }) {
             ease: "Expo.easeInOut",
         });
         tl.to(".loader2", {
-            top:"0%",
+            top:"-100%",
             height: "0%",
             duration: -0.1,
             ease: "Expo.easeInOut",
         });
 
         tl.to(".loader3", {
-            top:"0%",
+            top:"-100%",
             height: "0%",
             duration: -0.1,
             ease: "Expo.easeInOut",
