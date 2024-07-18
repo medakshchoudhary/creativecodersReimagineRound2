@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LoadingAnimation from './components/LoadingAnimation';
-import Navbar from './components/Navbar';
-import ShoeCarouselContainer from './components/ShoeCarouselContainer';
+import LandingPage from './components/LandingPage';
+import LTR from './components/LTR';
 
 function App() {
   const [isLoadingComplete, setIsLoadingComplete] = useState(false);
@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="main w-full min-h-screen font-HelveticaNowTextMedium">
       <LoadingAnimation onComplete={handleLoadingComplete} />
-      {isLoadingComplete && <Navbar />}
-      {isLoadingComplete && <ShoeCarouselContainer />}
+      {isLoadingComplete && <LandingPage />}
+      {isLoadingComplete && <LTR />}
     </div>
   );
 }
