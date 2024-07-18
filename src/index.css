@@ -3,13 +3,22 @@
     src: url('/fonts/HelveticaNowTextMedium.woff2') format('woff2');
 }
 
-html,body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
     cursor: url('/images/nike-custom-cursor.png'), auto;  
     -webkit-user-select: none;
     user-select: none;
+    overflow-x: hidden;
 }
 
-input[type="text"], textarea,a,.carousel-item {
+input[type="text"], textarea, a, .carousel-item {
     cursor: url('/images/nike-cursor-pointer.png'), auto;
 }
 

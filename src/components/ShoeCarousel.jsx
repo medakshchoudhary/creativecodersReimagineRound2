@@ -35,7 +35,7 @@ const responsive = {
 function ShoeCarousel({ onShoeClick }) {
     return (
         <Carousel
-            className="h-[28vh]"
+            className="h-[28vh] mb-4"
             responsive={responsive}
             infinite={true}
             autoPlay={true}
@@ -44,7 +44,7 @@ function ShoeCarousel({ onShoeClick }) {
             arrows={true}
         >
             {shoeDetails.map((shoe, index) => (
-                <div key={index} className="flex justify-center items-center mr-10">
+                <div key={index} className="flex justify-center items-center mx-10">
                     <div 
                         className="carousel-item w-full h-[25vh] border-solid border-4 rounded-3xl flex items-center gap-5" 
                         onClick={() => onShoeClick(shoe)}
