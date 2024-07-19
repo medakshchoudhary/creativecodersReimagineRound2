@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import gsap from 'gsap';
 import Showcase from './Showcase';
 import ShoeCarousel from './ShoeCarousel';
+import { useGSAP } from '@gsap/react';
 
 function ShoeCarouselContainer() {
     // Initial shoe details

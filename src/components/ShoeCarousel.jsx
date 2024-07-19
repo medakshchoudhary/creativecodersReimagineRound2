@@ -1,7 +1,9 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
+import gsap from 'gsap';
 import 'react-multi-carousel/lib/styles.css';
 import PropTypes from 'prop-types';
+import { useGSAP } from '@gsap/react';
 
 const shoeDetails = [
     { src: "/images/shoes/nike_punk_retro.png", name: "Nike Punk Retro", price: "$400" },
@@ -33,9 +35,19 @@ const responsive = {
 };
 
 function ShoeCarousel({ onShoeClick }) {
+    useGSAP(()=>{
+        var tl = gsap.timeline();
+        tl.from(".carousel",{
+            y: "70%",
+            opacity: 0,
+            ease: "Expo.easeInOut",
+            duration:2,
+            delay:2
+        })
+    })
     return (
         <Carousel
-            className="h-[28vh] mb-4"
+            className="carousel h-[28vh] mb-4"
             responsive={responsive}
             infinite={true}
             autoPlay={true}
