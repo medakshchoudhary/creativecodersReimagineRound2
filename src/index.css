@@ -22,6 +22,8 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(black,#9e9ea0,#2b333f);
     border-radius: 10px; 
 }
+
+/* tagline animation */
 .tagline .span {
     display: inline-flex;
 }
@@ -33,6 +35,28 @@ body::-webkit-scrollbar-thumb {
 .tagline:hover .span:nth-child(even) {
     letter-spacing: 0;
 }
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+
 
 
 @tailwind base;

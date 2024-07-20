@@ -2,8 +2,8 @@ import React from 'react';
 
 function Tagline2() {
     return (
-        <div className="Tagline2-banner w-full bg-[url('/images/jordan.jpeg')] bg-cover bg-center flex items-center justify-center">
-            <h1 className="tagline text-white text-[12vw] flex gap-10">
+        <div className="Tagline2-banner w-full h-[20vw] bg-[url('/images/jordan.jpeg')] bg-cover bg-center flex items-center justify-center">
+            <h1 className="tagline text-white text-[12vw] flex gap-16">
                 <span>
                     <span className="span">B</span><span className="span">E</span>
                 </span>

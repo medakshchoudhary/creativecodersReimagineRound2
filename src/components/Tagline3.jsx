@@ -2,7 +2,7 @@ import React from 'react';
 
 function Tagline3() {
     return (
-        <div className="Tagline3-banner w-full bg-[url('/images/weonair.jpg')] bg-cover bg-center flex items-center justify-center">
+        <div className="Tagline3-banner w-full h-[20vw] bg-[url('/images/weonair.jpg')] bg-cover bg-center flex items-center justify-center">
             <h1 className="tagline text-white text-[12vw] flex gap-10">
                 <span>
                     <span className="span">J</span><span className="span">UST</span>
