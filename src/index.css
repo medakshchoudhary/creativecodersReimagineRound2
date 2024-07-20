@@ -15,6 +15,25 @@ html, body {
 input[type="text"], textarea, a, .carousel-item {
     cursor: url('/images/nike-cursor-pointer.png'), auto;
 }
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(black,#9e9ea0,#2b333f);
+    border-radius: 10px; 
+}
+.tagline .span {
+    display: inline-flex;
+}
+.tagline .span:nth-child(even) {
+    overflow: hidden;    
+    transition: all ease 0.4s;
+    letter-spacing: -1em;
+}
+.tagline:hover .span:nth-child(even) {
+    letter-spacing: 0;
+}
+
 
 @tailwind base;
 @tailwind components;
