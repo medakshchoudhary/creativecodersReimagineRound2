@@ -12,7 +12,7 @@ html, body {
     overflow-x: hidden;
 }
 
-input[type="text"], textarea, a, .carousel-item {
+input[type="text"], textarea,a,.menu-items, .carousel-item {
     cursor: url('/images/nike-cursor-pointer.png'), auto;
 }
 body::-webkit-scrollbar {

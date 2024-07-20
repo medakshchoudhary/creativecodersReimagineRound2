@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import LoadingAnimation from './components/LoadingAnimation';
-import LandingPage from './components/LandingPage';
-import Taglines from './components/Taglines';
 import Lenis from 'lenis'
+import LoadingAnimation from './components/LoadingAnimation';
+import Navbar from './components/Navbar';
+import ShoeCarouselContainer from './components/ShoeCarouselContainer';
+import Taglines from './components/Taglines';
 
 function App() {
     const lenis = new Lenis()
@@ -29,7 +30,8 @@ function App() {
   return (
     <div className="main w-full min-h-screen font-HelveticaNowTextMedium">
       <LoadingAnimation onComplete={handleLoadingComplete} />
-      {isLoadingComplete && <LandingPage />}
+      {isLoadingComplete && <Navbar />}
+      {isLoadingComplete && <ShoeCarouselContainer /> }
       {isLoadingComplete && <Taglines />}
     </div>
   );

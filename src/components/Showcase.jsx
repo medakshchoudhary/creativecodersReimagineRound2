@@ -26,7 +26,7 @@ function Showcase({ selectedShoe }) {
     })
     return (
         <div className="showcase w-full h-[55vh] px-12 flex mt-7">
-            <div className="nike w-[56vw] h-full">
+            <div className="nike w-[56vw] h-full overflow-hidden">
                 <h1 className="text-[23vw] leading-none tracking-tighter">NIKE</h1>
             </div>
             <div className="shoe-display w-1/2 flex flex-col items-center justify-center mr-6">
