@@ -57,7 +57,17 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-
+.customcursorball{
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #cacacb;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
 
 
 @tailwind base;
