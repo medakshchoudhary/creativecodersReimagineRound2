@@ -74,6 +74,19 @@ html.lenis, html.lenis body {
   transition: all ease 0.2s;
 }
 
+.menu-items::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #000;
+  transition: all ease 0.3s;
+}
+.menu-items:hover::after{
+  width: 100%;
+}
 
 @tailwind base;
 @tailwind components;
