@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import ShoeCarouselContainer from './components/ShoeCarouselContainer';
 import Taglines from './components/Taglines';
 import CustomCursorBall from './components/CustomCursorBall';
+import BuyNow from './components/BuyNow';
 
 function App() {
     const lenis = new Lenis()
@@ -30,11 +31,12 @@ function App() {
 
   return (
     <div className="main w-full min-h-screen font-HelveticaNowTextMedium">
-      <CustomCursorBall />
       <LoadingAnimation onComplete={handleLoadingComplete} />
+      {isLoadingComplete && <CustomCursorBall/>}
       {isLoadingComplete && <Navbar />}
       {isLoadingComplete && <ShoeCarouselContainer /> }
       {isLoadingComplete && <Taglines />}
+      {isLoadingComplete && <BuyNow />}
     </div>
   );
 }

@@ -12,7 +12,7 @@ html, body {
     overflow-x: hidden;
 }
 
-input[type="text"], textarea,a,.menu-items, .carousel-item {
+input[type="text"], textarea,a,.menu-items,.shopnow, .carousel-item {
     cursor: url('/images/nike-cursor-pointer.png'), auto;
 }
 body::-webkit-scrollbar {
@@ -67,6 +67,11 @@ html.lenis, html.lenis body {
     height: 25px;
     background-color: #cacacb;
     transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.shopnow:hover{
+  transform: scale(1.1);
+  transition: all ease 0.2s;
 }
 
 
