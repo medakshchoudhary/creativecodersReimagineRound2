@@ -59,6 +59,57 @@ function BuyNow() {
                 }
             }
         );
+        const womenImage = document.querySelector('.women');
+        const menImage = document.querySelector('.men');
+
+        const womenPopup = document.querySelector('.women-popup');
+        const menPopup = document.querySelector('.men-popup');
+
+        const handleWomenHoverIn = (popup) => {
+            gsap.to(popup, {
+                x: 0,
+                opacity: 1,
+                duration: 0.5,
+                ease: 'power2.out',
+            });
+        };
+
+        const handleWomenHoverOut = (popup) => {
+            gsap.to(popup, {
+                x: 100,
+                opacity: 0,
+                duration: 0.5,
+                ease: 'power2.in',
+            });
+        };
+        const handleMenHoverIn = (popup) => {
+            gsap.to(popup, {
+                x: 0,
+                opacity: 1,
+                duration: 0.5,
+                ease: 'power2.out',
+            });
+        };
+
+        const handleMenHoverOut = (popup) => {
+            gsap.to(popup, {
+                x: -100,
+                opacity: 0,
+                duration: 0.5,
+                ease: 'power2.in',
+            });
+        };
+
+        if (womenImage) {
+            womenImage.addEventListener('mouseenter', () => handleWomenHoverIn(womenPopup));
+            womenImage.addEventListener('mouseleave', () => handleWomenHoverOut(womenPopup));
+        }
+
+        if (menImage) {
+            menImage.addEventListener('mouseenter', () => handleMenHoverIn(menPopup));
+            menImage.addEventListener('mouseleave', () => handleMenHoverOut(menPopup));
+        }
+
     }, []);
 
     return (
