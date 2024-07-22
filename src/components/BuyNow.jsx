@@ -67,17 +67,31 @@ function BuyNow() {
                 <h1 className="text-7xl uppercase font-bold">Play Your Part</h1>
                 <h1 className="text-lg font-bold">Join us in being the best.</h1>
             </div>
-            <div className="container flex gap-28 items-center justify-center p-10">
-                <div className="women flex flex-col items-center relative">
-                    <img className="shopnow-image w-96 rounded-3xl" src="/images/Rectangle 8.png" alt="" />
-                    <div className="shopnow bg-black text-white absolute bottom-4 rounded-full flex items-center justify-center">
-                        <h1 className="font-bold text-lg px-5 py-2 uppercase">Shop Now</h1>
+            <div className="container flex gap-20 items-center justify-center p-10">
+                <div className="women-container flex gap-3">
+                    <div className="women-popup flex flex-col items-center justify-center">
+                        {"WOMEN".split("").map((item,index)=>(
+                            <span className="hovering-titles text-8xl" key={index}>{item}</span>
+                        ))}
+                    </div>
+                    <div className="women flex flex-col items-center relative">
+                        <img className="women-image w-96 rounded-3xl" src="/images/Rectangle 8.png" alt="" />
+                        <div className="shopnow bg-black text-white absolute bottom-4 rounded-full flex items-center justify-center">
+                            <h1 className="font-bold text-lg px-5 py-2 uppercase">Shop Now</h1>
+                        </div>
                     </div>
                 </div>
-                <div className="men flex flex-col items-center relative">
-                    <img className="shopnow-image w-96 rounded-3xl" src="/images/Rectangle 9.png" alt="" />
-                    <div className="shopnow bg-white text-black absolute bottom-4 rounded-full flex items-center justify-center">
-                        <h1 className="font-bold text-lg px-5 py-2 uppercase">Shop Now</h1>
+                <div className="men-container flex gap-3">
+                    <div className="men flex flex-col items-center relative">
+                        <img className="men-image w-96 rounded-3xl" src="/images/Rectangle 9.png" alt="" />
+                        <div className="shopnow bg-black text-white absolute bottom-4 rounded-full flex items-center justify-center">
+                            <h1 className="font-bold text-lg px-5 py-2 uppercase">Shop Now</h1>
+                        </div>
+                    </div>
+                    <div className="men-popup flex flex-col items-center justify-center">
+                        {"MEN".split("").map((item,index)=>(
+                            <span className="hovering-titles text-8xl" key={index}>{item}</span>
+                        ))}
                     </div>
                 </div>
             </div>
