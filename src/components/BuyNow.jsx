@@ -59,6 +59,8 @@ function BuyNow() {
                 }
             }
         );
+        gsap.set(".men-popup", {x:-100,opacity:0});
+        gsap.set(".women-popup", {x:100,opacity:0});
         const womenImage = document.querySelector('.women');
         const menImage = document.querySelector('.men');
 
