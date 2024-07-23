@@ -137,7 +137,7 @@ function BuyNow() {
                 <div className="men-container flex gap-3">
                     <div className="men flex flex-col items-center relative">
                         <img className="men-image w-96 rounded-3xl" src="/images/Rectangle 9.png" alt="" />
-                        <div className="shopnow bg-black text-white absolute bottom-4 rounded-full flex items-center justify-center">
+                        <div className="shopnow bg-white text-black absolute bottom-4 rounded-full flex items-center justify-center">
                             <h1 className="font-bold text-lg px-5 py-2 uppercase">Shop Now</h1>
                         </div>
                     </div>
