@@ -115,7 +115,7 @@ function BuyNow() {
     }, []);
 
     return (
-        <div className="buynow font-HelveticaNowTextMedium pt-10">
+        <div className="buynow pt-10">
             <div className="quotes flex flex-col items-center justify-center ">
                 <h1 className="text-7xl uppercase font-bold">Play Your Part</h1>
                 <h1 className="text-lg font-bold">Join us in being the best.</h1>

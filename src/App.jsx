@@ -6,6 +6,7 @@ import ShoeCarouselContainer from './components/ShoeCarouselContainer';
 import Taglines from './components/Taglines';
 import CustomCursorBall from './components/CustomCursorBall';
 import BuyNow from './components/BuyNow';
+import Highlights from './components/Highlights';
 
 function App() {
     const lenis = new Lenis()
@@ -37,6 +38,7 @@ function App() {
       {isLoadingComplete && <ShoeCarouselContainer /> }
       {isLoadingComplete && <Taglines />}
       {isLoadingComplete && <BuyNow />}
+      {isLoadingComplete && <Highlights />}
     </div>
   );
 }
