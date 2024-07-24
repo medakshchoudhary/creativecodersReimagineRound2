@@ -2,9 +2,11 @@
     font-family: 'HelveticaNowTextMedium';
     src: url('/fonts/HelveticaNowTextMedium.woff2') format('woff2');
 }
+@import 'node_modules/locomotive-scroll/dist/locomotive-scroll';
+
 
 html, body {
-    height: 100%;
+    height: auto;
     width: 100%;
     cursor: url('/images/nike-custom-cursor.png'), auto;  
     -webkit-user-select: none;
@@ -34,27 +36,6 @@ body::-webkit-scrollbar-thumb {
 }
 .tagline:hover .span:nth-child(even) {
     letter-spacing: 0;
-}
-
-html.lenis, html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  -webkit-overscroll-behavior: contain;
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
 }
 
 .customcursorball{

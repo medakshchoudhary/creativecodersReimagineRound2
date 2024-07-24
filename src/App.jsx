@@ -9,21 +9,12 @@ import BuyNow from './components/BuyNow';
 import Highlights from './components/Highlights';
 import Video from './components/Video';
 import LastTagline from './components/LastTagline';
+import LocomotiveScroll from 'locomotive-scroll';
+
+
 
 function App() {
-    const lenis = new Lenis()
-
-    lenis.on('scroll', (e) => {
-    console.log(e)
-    })
-
-    function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-
+  const locomotiveScroll = new LocomotiveScroll();
 
   const [isLoadingComplete, setIsLoadingComplete] = useState(false);
 
