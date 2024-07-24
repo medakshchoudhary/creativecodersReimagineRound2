@@ -7,6 +7,8 @@ import Taglines from './components/Taglines';
 import CustomCursorBall from './components/CustomCursorBall';
 import BuyNow from './components/BuyNow';
 import Highlights from './components/Highlights';
+import Video from './components/Video';
+import LastTagline from './components/LastTagline';
 
 function App() {
     const lenis = new Lenis()
@@ -39,6 +41,8 @@ function App() {
       {isLoadingComplete && <Taglines />}
       {isLoadingComplete && <BuyNow />}
       {isLoadingComplete && <Highlights />}
+      {isLoadingComplete && <Video />}
+      {isLoadingComplete && <LastTagline />}
     </div>
   );
 }
