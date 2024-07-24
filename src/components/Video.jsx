@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Video() {
-    useEffect(() => {
-        gsap.fromTo(".videocontainer .video", 
+    useGSAP(() => {
+        console.log('ScrollTrigger animation initiated');
+        gsap.fromTo(".video", 
             { width: "30vw" }, 
             {
                 width: "100vw",
@@ -19,7 +21,9 @@ function Video() {
                 }
             }
         );
-    }, []);
+        console.log('ScrollTrigger animation created');
+    })
+    
 
     return (
         <div className="videocontainer w-full bg-black flex items-start justify-center">
