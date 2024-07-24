@@ -10,7 +10,6 @@ function Highlights() {
   const highlight3ImgRef = useRef(null);
   const highlightsRef = useRef(null);
   const textRef = useRef(null);
-  const timelineRef = useRef(gsap.timeline());
 
   const splitText = () => {
     const highlightsElement = highlightsRef.current;
@@ -29,17 +28,14 @@ function Highlights() {
       return;
     }
 
-    if (timelineRef.current) {
-      timelineRef.current.kill(); // Kill any previous timeline to avoid conflicts
-    }
-
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".topheading",
-        start: "top 75%",
-        end: "top 55%",
+        start: "top 85%",
+        end: "top 65%",
         scrub: 3,
         toggleActions: "play reverse play reverse",
+        markers: true,
       }
     });
 
@@ -55,19 +51,11 @@ function Highlights() {
           stagger: 0.1,
         }
       );
-
-    timelineRef.current = tl; // Store the new timeline
   };
 
   useEffect(() => {
     splitText();
     animateHighlights();
-
-    return () => {
-      if (timelineRef.current) {
-        timelineRef.current.kill(); // Clean up timeline on component unmount
-      }
-    };
   }, []);
 
   useEffect(() => {
@@ -80,8 +68,8 @@ function Highlights() {
         scrollTrigger: {
           scroller: "body",
           trigger: ".highlight1",
-          start: "top 75%",
-          end: "top 55%",
+          start: "top 90%",
+          end: "top 0%",
           stagger: 1,
           scrub: 1,
           toggleActions: "play reverse play reverse",
@@ -97,8 +85,8 @@ function Highlights() {
         scrollTrigger: {
           scroller: "body",
           trigger: ".highlight2",
-          start: "top 75%",
-          end: "top 55%",
+          start: "top 90%",
+          end: "top 0%",
           stagger: 1,
           scrub: 1,
           toggleActions: "play reverse play reverse",
@@ -175,12 +163,6 @@ function Highlights() {
         }
       }
     );
-
-    return () => {
-      if (timelineRef.current) {
-        timelineRef.current.kill(); // Clean up timeline on component unmount
-      }
-    };
   }, []);
 
   return (

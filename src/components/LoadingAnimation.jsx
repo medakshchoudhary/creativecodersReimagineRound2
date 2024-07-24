@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 function LoadingAnimation({ onComplete }) {
-
-    useGSAP(()=>{
+    useGSAP(() => {
         var tl = gsap.timeline({
             onComplete: onComplete
         });

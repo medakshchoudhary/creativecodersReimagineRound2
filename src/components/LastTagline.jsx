@@ -18,7 +18,6 @@ function LastTagline() {
                     end: "top 60%",
                     scrub: 1,
                     toggleActions: "play reverse play reverse",
-                    markers: true
                 }
             }
         );

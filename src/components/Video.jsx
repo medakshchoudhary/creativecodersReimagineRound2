@@ -16,7 +16,6 @@ function Video() {
           end: "top 0%",   // Trigger ends when the top of the video hits the top of the viewport
           scrub: 1,        // Smoothly animates the width with scrolling
           toggleActions: "play reverse play reverse", // Play on enter, reverse on leave, etc.
-          markers: true    // Optional: Set to true to show debug markers
         }
       }
     );
