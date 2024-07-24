@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Lenis from 'lenis'
+import Lenis from 'lenis';
 import LoadingAnimation from './components/LoadingAnimation';
 import Navbar from './components/Navbar';
 import ShoeCarouselContainer from './components/ShoeCarouselContainer';
