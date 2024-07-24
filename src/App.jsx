@@ -40,8 +40,8 @@ function App() {
       {isLoadingComplete && <ShoeCarouselContainer /> }
       {isLoadingComplete && <Taglines />}
       {isLoadingComplete && <BuyNow />}
-      {isLoadingComplete && <Highlights />}
       {isLoadingComplete && <Video />}
+      {isLoadingComplete && <Highlights />}
       {isLoadingComplete && <LastTagline />}
     </div>
   );

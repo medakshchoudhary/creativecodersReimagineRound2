@@ -6,7 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function BuyNow() {
     useEffect(() => {
-        // Animate quotes
         gsap.fromTo(".buynow .quotes h1", 
             { y: 50, opacity: 0 }, 
             {
@@ -143,7 +142,7 @@ function BuyNow() {
                     </div>
                     <div className="men-popup flex flex-col items-center justify-center">
                         {"MEN".split("").map((item,index)=>(
-                            <span className="hovering-titles text-8xl" key={index}>{item}</span>
+                             <span className="hovering-titles text-8xl" key={index}>{item}</span>
                         ))}
                     </div>
                 </div>

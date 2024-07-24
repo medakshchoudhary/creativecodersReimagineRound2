@@ -1,35 +1,32 @@
-import React from 'react';
+import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Video() {
-    useGSAP(() => {
-        console.log('ScrollTrigger animation initiated');
-        gsap.fromTo(".video", 
-            { width: "30vw" }, 
-            {
-                width: "100vw",
-                scrollTrigger: {
-                    trigger: ".video",
-                    start: "top 50%",
-                    end: "top 0%",
-                    scrub: 1,
-                    toggleActions: "play reverse play reverse",
-                }
-            }
-        );
-        console.log('ScrollTrigger animation created');
-    })
-    
-
-    return (
-        <div className="videocontainer w-full bg-black flex items-start justify-center">
-            <video className="video" autoPlay loop muted src="/videos/nike-ad.mp4"></video>
-        </div>
+  useEffect(() => {
+    gsap.fromTo(".video", 
+      { width: "30vw" }, 
+      {
+        width: "100vw",
+        scrollTrigger: {
+          trigger: ".video",
+          start: "top 50%", // Trigger starts when the top of the video hits 50% of the viewport height
+          end: "top 0%",   // Trigger ends when the top of the video hits the top of the viewport
+          scrub: 1,        // Smoothly animates the width with scrolling
+          toggleActions: "play reverse play reverse", // Play on enter, reverse on leave, etc.
+          markers: true    // Optional: Set to true to show debug markers
+        }
+      }
     );
+  }, []);
+
+  return (
+    <div className="videocontainer w-full bg-black flex items-start justify-center overflow-hidden">
+      <video className="video w-full" autoPlay loop muted src="/videos/nike-ad.mp4"></video>
+    </div>
+  );
 }
 
 export default Video;
