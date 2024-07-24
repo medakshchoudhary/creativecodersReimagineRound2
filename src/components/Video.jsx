@@ -22,7 +22,7 @@ function Video() {
   }, []);
 
   return (
-    <div className="videocontainer w-full bg-black flex items-start justify-center overflow-hidden">
+    <div className="videocontainer w-full h-[100vh] bg-black flex items-start justify-center overflow-hidden">
       <video className="video w-full" autoPlay loop muted src="/videos/nike-ad.mp4"></video>
     </div>
   );

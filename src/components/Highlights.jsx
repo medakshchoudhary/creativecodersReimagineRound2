@@ -31,8 +31,8 @@ function Highlights() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".topheading",
-        start: "top 85%",
-        end: "top 65%",
+        start: "top 60%",
+        end: "top 40%",
         scrub: 3,
         toggleActions: "play reverse play reverse",
         markers: true,
@@ -60,17 +60,30 @@ function Highlights() {
 
   useEffect(() => {
     gsap.fromTo(
+      textRef.current,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "top 60%",
+          end: "top 40%",
+          scrub: 1,
+          toggleActions: "play reverse play reverse",
+        }
+      }
+    );
+
+    gsap.fromTo(
       ".highlights .highlight1",
       { y: 50, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         scrollTrigger: {
-          scroller: "body",
           trigger: ".highlight1",
-          start: "top 90%",
-          end: "top 0%",
-          stagger: 1,
+          start: "top 80%",
+          end: "top 40%",
           scrub: 1,
           toggleActions: "play reverse play reverse",
         }
@@ -83,11 +96,9 @@ function Highlights() {
         y: 0,
         opacity: 1,
         scrollTrigger: {
-          scroller: "body",
           trigger: ".highlight2",
-          start: "top 90%",
-          end: "top 0%",
-          stagger: 1,
+          start: "top 80%",
+          end: "top 40%",
           scrub: 1,
           toggleActions: "play reverse play reverse",
         }
@@ -100,11 +111,9 @@ function Highlights() {
         y: 0,
         opacity: 1,
         scrollTrigger: {
-          scroller: "body",
           trigger: ".highlight3",
-          start: "top 75%",
-          end: "top 55%",
-          stagger: 1,
+          start: "top 80%",
+          end: "top 40%",
           scrub: 1,
           toggleActions: "play reverse play reverse",
         }
@@ -145,24 +154,6 @@ function Highlights() {
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
-
-  useEffect(() => {
-    gsap.fromTo(
-      textRef.current,
-      { opacity: 0 },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          scroller: "body",
-          trigger: textRef.current,
-          start: "top 75%",
-          end: "top 55%",
-          scrub: 1,
-          toggleActions: "play reverse play reverse",
-        }
-      }
-    );
   }, []);
 
   return (
