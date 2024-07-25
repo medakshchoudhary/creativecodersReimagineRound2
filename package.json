@@ -10,14 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@google/model-viewer": "^3.5.0",
     "@gsap/react": "^2.1.1",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.13",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-multi-carousel": "^2.8.5",
-    "three": "^0.167.0"
+    "three": "^0.163.0",
+  "@google/model-viewer": "^3.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
