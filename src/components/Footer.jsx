@@ -57,7 +57,7 @@ function Footer() {
               <div className="shoeconatiner full h-1/2  border-solid border-2">
                 <ModelViewer
                   alt="Supreme x Nike Air More Uptempo"
-                  src="/3dmodels/yellow_nike_dunk_low_dusty_olive_from_video_clip.glb"
+                  src="/3dmodels/yellow-nike.glb"
                   poster="/3dmodels/ImageToStl.com_yellow_nike_dunk_low_dusty_olive_from_video_clip.webp"
                   shadowIntensity="1"
                 />
@@ -65,7 +65,7 @@ function Footer() {
               <div className="shirtconatiner w-full h-1/2 border-solid border-2">
                 <ModelViewer
                   alt="Polo shirt"
-                  src="/3dmodels/polo nike - t-shirt .glb"
+                  src="/3dmodels/polo.glb"
                   poster="/3dmodels/polo nike - t-shirt .glb"
                   shadowIntensity="1"
                 />
@@ -75,7 +75,7 @@ function Footer() {
               <div className="fortniteskin full h-1/2 border-solid border-2">
                 <ModelViewer
                   alt="Fortnite Skin"
-                  src="/3dmodels/fortnite_skin_ikonik_x_nike.glb"
+                  src="/3dmodels/fortnite.glb"
                   poster="/3dmodels/ImageToStl.com_fortnite_skin_ikonik_x_nike.webp"
                   shadowIntensity="1"
                 />
@@ -83,7 +83,7 @@ function Footer() {
               <div className="keychain full h-1/2 border-solid border-2">
                 <ModelViewer
                   alt="Key Chain"
-                  src="/3dmodels/nike_keychain.glb"
+                  src="/3dmodels/keychain.glb"
                   poster="/3dmodels/ImageToStl.com_nike_keychain.webp"
                   shadowIntensity="1"
                 />
