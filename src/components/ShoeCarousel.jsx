@@ -61,7 +61,7 @@ function ShoeCarousel({ onShoeClick }) {
                         className="carousel-item w-full h-[25vh] border-solid border-4 rounded-3xl flex items-center gap-5" 
                         onClick={() => onShoeClick(shoe)}
                     >
-                        <div className="image-container w-full h-full p-5 flex items-center justify-center">
+                        <div className="image-container w-full h-full md:p-5 px-1 flex items-center justify-center">
                             <img 
                                 src={shoe.src} 
                                 alt={shoe.name} 
