@@ -23,7 +23,7 @@ function CustomCursorBall() {
   }, []);
 
   return (
-    <div className="customcursorball" ref={cursorRef}></div>
+    <div className="customcursorball pointer-events-none z-50 hidden lg:block" ref={cursorRef}></div>
   );
 }
 
