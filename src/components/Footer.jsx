@@ -60,7 +60,7 @@ function Footer() {
           <ModelViewer
                   alt="Nike Air Jordan"
                   src="/3dmodels/nike_air_jordan.glb"
-                  poster="/public/3dmodels/ImageToStl.com_nike_air_jordan.webp"
+                  poster="/3dmodels/ImageToStl.com_nike_air_jordan.webp"
                   shadowIntensity="1"
                 />
           </div>
