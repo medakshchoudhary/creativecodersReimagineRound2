@@ -3,7 +3,7 @@ import React from 'react';
 function Tagline2() {
     return (
         <div className="Tagline2-banner w-full md:h-[20vw] h-[60vw] bg-[url('/images/jordan.jpeg')] bg-cover bg-center flex items-center justify-center">
-            <h1 className="tagline text-white text-[12vw] flex gap-4 md:gap-16">
+            <h1 className="tagline text-white text-[13vw] md:text-[12vw] md:flex-row flex flex-col md:gap-16">
                 <span>
                     <span className="span">B</span><span className="span">E</span>
                 </span>

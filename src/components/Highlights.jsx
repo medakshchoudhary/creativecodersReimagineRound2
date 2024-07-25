@@ -157,31 +157,31 @@ function Highlights() {
   }, []);
 
   return (
-    <div className="highlights w-full h-fit bg-black flex flex-col text-white pt-12 px-20">
+    <div className="highlights w-full h-fit bg-black flex flex-col text-white pt-12 md:px-20">
       <div className="topheading flex flex-col gap-3 items-center justify-center mb-20">
-        <h1 ref={highlightsRef} className="text-9xl uppercase">Highlights</h1>
-        <h1 ref={textRef} className="text-3xl opacity-0">Discover what matches with your personality</h1>
+        <h1 ref={highlightsRef} className="text-5xl md:text-9xl uppercase">Highlights</h1>
+        <h1 ref={textRef} className="text-md md:text-3xl opacity-0">Discover what matches with your personality</h1>
       </div>
       <div className="highlights-container">
-        <div className="highlight1 w-full flex">
-          <img ref={highlight1ImgRef} className="w-80 rounded-3xl" src="/images/highlight1.png" alt="" />
-          <div className="details pl-10 flex flex-col justify-center">
-            <h1 className="text-6xl font-bold">Embrace the Classic Comfort</h1>
-            <p className="text-xl mt-12">Step into timeless style with our featured look of the day, showcasing the epitome of casual elegance. This ensemble features a sleek grey Nike sweatshirt paired with matching joggers, embodying both comfort and modern fashion. The clean lines and understated Nike logo make it a versatile addition to any wardrobe, perfect for lounging or making a statement on the streets. Complete the look with pristine white sneakers, adding a touch of fresh sophistication. Elevate your everyday style with this effortlessly cool outfit, blending simplicity and sportiness in perfect harmony.</p>
+        <div className="highlight1 w-full flex flex-col items-center md:justify-center md:flex-row md:mb-0 mb-8">
+          <img ref={highlight1ImgRef} className="w-80 rounded-3xl md:mb-0 mb-4" src="/images/highlight1.png" alt="" />
+          <div className="details md:pl-10 md:pr-0 flex flex-col md:justify-center px-10">
+            <h1 className="text-4xl md:text-6xl font-bold">Embrace the Classic Comfort</h1>
+            <p className="text-sm md:text-xl mt-12">Step into timeless style with our featured look of the day, showcasing the epitome of casual elegance. This ensemble features a sleek grey Nike sweatshirt paired with matching joggers, embodying both comfort and modern fashion. The clean lines and understated Nike logo make it a versatile addition to any wardrobe, perfect for lounging or making a statement on the streets. Complete the look with pristine white sneakers, adding a touch of fresh sophistication. Elevate your everyday style with this effortlessly cool outfit, blending simplicity and sportiness in perfect harmony.</p>
           </div>
         </div>
-        <div className="highlight2 w-full flex">
-          <div className="details pr-10 flex flex-col justify-center">
-            <h1 className="text-6xl font-bold">Effortless Elegance in Grey</h1>
-            <p className="text-xl mt-12">Step into timeless style with our featured look of the day, showcasing the epitome of casual elegance. This ensemble features a sleek grey Nike sweatshirt paired with matching joggers, embodying both comfort and modern fashion. The clean lines and understated Nike logo make it a versatile addition to any wardrobe, perfect for lounging or making a statement on the streets. Complete the look with pristine white sneakers, adding a touch of fresh sophistication. Elevate your everyday style with this effortlessly cool outfit, blending simplicity and sportiness in perfect harmony.</p>
+        <div className="highlight2 w-full flex flex-col items-center justify-center md:flex-row md:mb-0 mb-8">
+            <div className="details md:pl-10 md:pr-0 flex flex-col md:justify-center px-10">
+            <h1 className="text-4xl md:text-6xl font-bold">Effortless Elegance in Grey</h1>
+            <p className="text-sm md:text-xl mt-12 md:mb-0 mb-4">Step into timeless style with our featured look of the day, showcasing the epitome of casual elegance. This ensemble features a sleek grey Nike sweatshirt paired with matching joggers, embodying both comfort and modern fashion. The clean lines and understated Nike logo make it a versatile addition to any wardrobe, perfect for lounging or making a statement on the streets. Complete the look with pristine white sneakers, adding a touch of fresh sophistication. Elevate your everyday style with this effortlessly cool outfit, blending simplicity and sportiness in perfect harmony.</p>
           </div>
           <img ref={highlight2ImgRef} className="w-80 rounded-3xl" src="/images/highlight2.png" alt="" />
         </div>
-        <div className="highlight3 w-full flex">
-          <img ref={highlight3ImgRef} className="w-80 rounded-3xl" src="/images/highlight3.png" alt="" />
-          <div className="details pl-10 flex flex-col justify-center">
-            <h1 className="text-6xl font-bold">Dynamic Court Style</h1>
-            <p className="text-xl mt-12">Dominate the court with our standout look of the day. This dynamic ensemble features a sleek black Nike long-sleeve shirt paired with matching athletic shorts, accented with bold yellow details. Perfect for peak performance, the lightweight, breathable fabric ensures comfort and agility. Complete the look with high-performance black sneakers for a sleek, sophisticated edge. Elevate your sportswear collection with this high-energy, stylish outfit.</p>
+        <div className="highlight3 w-full flex flex-col items-center justify-center md:flex-row">
+          <img ref={highlight3ImgRef} className="w-80 rounded-3xl md:mb-0 mb-4" src="/images/highlight3.png" alt="" />
+          <div className="details md:pl-10 md:pr-0 flex flex-col md:justify-center px-10">
+            <h1 className="text-4xl md:text-6xl font-bold">Dynamic Court Style</h1>
+            <p className="text-sm md:text-xl mt-12">Dominate the court with our standout look of the day. This dynamic ensemble features a sleek black Nike long-sleeve shirt paired with matching athletic shorts, accented with bold yellow details. Perfect for peak performance, the lightweight, breathable fabric ensures comfort and agility. Complete the look with high-performance black sneakers for a sleek, sophisticated edge. Elevate your sportswear collection with this high-energy, stylish outfit.</p>
           </div>
         </div>
       </div>

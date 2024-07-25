@@ -115,15 +115,15 @@ function BuyNow() {
 
     return (
         <div className="buynow w-full h-fit pt-10">
-            <div className="quotes flex flex-col items-center justify-center bg-red-500">
+            <div className="quotes flex flex-col items-center justify-center">
                 <h1 className="text-4xl md:text-7xl uppercase font-bold">Play Your Part</h1>
                 <h1 className="text-md md:text-lg font-bold">Join us in being the best.</h1>
             </div>
-            <div className="container flex gap-20 items-center justify-center p-10">
+            <div className="container md:flex-row flex flex-col gap-20 items-center justify-center p-10">
                 <div className="women-container flex gap-3 justify-center items-center">
                     <div className="women-popup flex flex-col items-center justify-center">
                         {"WOMEN".split("").map((item,index)=>(
-                            <span className="hovering-titles text-8xl" key={index}>{item}</span>
+                            <span className="hovering-titles text-5xl md:text-8xl" key={index}>{item}</span>
                         ))}
                     </div>
                     <div className="women flex flex-col items-center relative">
@@ -142,7 +142,7 @@ function BuyNow() {
                     </div>
                     <div className="men-popup flex flex-col items-center justify-center">
                         {"MEN".split("").map((item,index)=>(
-                             <span className="hovering-titles text-8xl" key={index}>{item}</span>
+                             <span className="hovering-titles text-5xl md:text-8xl" key={index}>{item}</span>
                         ))}
                     </div>
                 </div>
