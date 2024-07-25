@@ -48,7 +48,7 @@ function Navbar() {
             <img className="logo-image w-16" src="/images/nike-black-logo.png" alt="Nike logo" />
             <div className="hidden lg:flex menu-items-container flex gap-5">
                 {["New & Featured", "Men", "Women", "Kids", "Customize", "SNKRS"].map((item, index) => (
-                    <a className="menu-items text-lg" key={index}>{item}</a>
+                    <a className="menu-items md:text-lg" key={index}>{item}</a>
                 ))}
             </div>
             <div className="flex gap-1">
@@ -68,7 +68,7 @@ function Navbar() {
                     <div className={`h-1 w-6 bg-black transition-all ${menuOpen ? "transform -rotate-45 -translate-y-2" : ""}`}></div>
                 </button>
             </div>
-            <div className={`lg:hidden hamburger-menu fixed top-0 right-0 h-full bg-white w-4/5 transform translate-x-full shadow-lg p-8 ${menuOpen ? "z-50" : ""}`}>
+            <div className={`lg:hidden hamburger-menu fixed top-0 right-0 h-full bg-white w-4/5 transform translate-x-full shadow-lg p-8 ${menuOpen ? "z-50" : "z-50"}`}>
                 <div className="flex flex-col gap-5 mt-10">
                     {["New & Featured", "Men", "Women", "Kids", "Customize", "SNKRS"].map((item, index) => (
                         <a className="menu-items text-lg" key={index}>{item}</a>
