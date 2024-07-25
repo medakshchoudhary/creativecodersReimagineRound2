@@ -115,9 +115,9 @@ function BuyNow() {
 
     return (
         <div className="buynow w-full h-fit pt-10">
-            <div className="quotes flex flex-col items-center justify-center ">
-                <h1 className="text-7xl uppercase font-bold">Play Your Part</h1>
-                <h1 className="text-lg font-bold">Join us in being the best.</h1>
+            <div className="quotes flex flex-col items-center justify-center bg-red-500">
+                <h1 className="text-4xl md:text-7xl uppercase font-bold">Play Your Part</h1>
+                <h1 className="text-md md:text-lg font-bold">Join us in being the best.</h1>
             </div>
             <div className="container flex gap-20 items-center justify-center p-10">
                 <div className="women-container flex gap-3 justify-center items-center">
@@ -127,7 +127,7 @@ function BuyNow() {
                         ))}
                     </div>
                     <div className="women flex flex-col items-center relative">
-                        <img className="women-image w-96 rounded-3xl self-center" src="/images/Rectangle 8.png " alt="" />
+                        <img className="women-image md:w-96 rounded-3xl self-center" src="/images/Rectangle 8.png " alt="" />
                         <div className="shopnow bg-black text-white absolute bottom-4 rounded-full flex items-center justify-center">
                             <h1 className="font-bold text-lg px-5 py-2 uppercase">Shop Now</h1>
                         </div>

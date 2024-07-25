@@ -41,9 +41,9 @@ function LastTagline() {
     }, []);
 
     return (
-        <div className="taglinelast w-full h-[70vh] pb-5 bg-black flex items-center justify-center flex-col">
-            <h1 className="heading1 text-[10vw] font-extrabold uppercase text-[#DA0007] leading-none">Winning isn&apos;t</h1>
-            <h1 className="heading2 text-[10vw] font-extrabold uppercase text-[#DA0007] leading-none">for everyone</h1>
+        <div className="taglinelast w-full md:h-[70vh] h-[30vh] pb-5 bg-black flex items-center justify-center flex-col">
+            <h1 className="heading1 text-[12vw] md:text-[10vw] font-extrabold uppercase text-[#DA0007] leading-none">Winning isn&apos;t</h1>
+            <h1 className="heading2 text-[12vw] md:text-[10vw] font-extrabold uppercase text-[#DA0007] leading-none">for everyone</h1>
         </div>
     );
 }
