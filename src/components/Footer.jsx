@@ -46,53 +46,30 @@ function Footer() {
         </svg>
       </div>
       <div className="creativecoders w-full h-fit">
-        <div className="container w-full h-[130vh] flex flex-col items-center justify-center">
+        <div className="container w-full h-[80vh] flex flex-col items-center justify-center">
           <div className="3dstore">
-            <h1 className="text-7xl text-white p-8 font-extrabold uppercase">
-              Sneak Peak of " 3D STORE "
-            </h1>
+            <h1 className="text-7xl text-white font-extrabold uppercase">Introducing 3d store</h1>
           </div>
           <div className="3dmodelcontainer w-full h-full flex items-center justify-center">
-            <div className="firstconatiner3d w-full h-full">
-              <div className="shoeconatiner full h-1/2  border-solid border-2">
-                <ModelViewer
+          <ModelViewer
                   alt="Supreme x Nike Air More Uptempo"
-                  src="/3dmodels/yellow-nike.glb"
+                  src="/3dmodels/yellow_nike_dunk_low_dusty_olive_from_video_clip.glb"
                   poster="/3dmodels/ImageToStl.com_yellow_nike_dunk_low_dusty_olive_from_video_clip.webp"
                   shadowIntensity="1"
                 />
-              </div>
-              <div className="shirtconatiner w-full h-1/2 border-solid border-2">
-                <ModelViewer
-                  alt="Polo shirt"
-                  src="/3dmodels/polo.glb"
-                  poster="/3dmodels/polo nike - t-shirt .glb"
+          <ModelViewer
+                  alt="Supreme x Nike Air More Uptempo"
+                  src="/3dmodels/nike_air_jordan.glb"
+                  poster="/3dmodels/ImageToStl.com_yellow_nike_dunk_low_dusty_olive_from_video_clip.webp"
                   shadowIntensity="1"
                 />
-              </div>
-            </div>
-            <div className="secondcontainer3d w-full h-full">
-              <div className="fortniteskin full h-1/2 border-solid border-2">
-                <ModelViewer
-                  alt="Fortnite Skin"
-                  src="/3dmodels/fortnite.glb"
-                  poster="/3dmodels/ImageToStl.com_fortnite_skin_ikonik_x_nike.webp"
-                  shadowIntensity="1"
-                />
-              </div>
-              <div className="keychain full h-1/2 border-solid border-2">
-                <ModelViewer
-                  alt="Key Chain"
-                  src="/3dmodels/keychain.glb"
-                  poster="/3dmodels/ImageToStl.com_nike_keychain.webp"
-                  shadowIntensity="1"
-                />
-              </div>
-            </div>
+          </div>
+          <div className="showmore">
+            <a className="text-2xl bg-white text-black rounded-full py-2 px-5 font-extrabold uppercase">Show More</a>
           </div>
         </div>
       </div>
-      <div className="lastline w-full h-fit text-white flex items-center justify-between py-4 px-12">
+      <div className="lastline w-full h-fit text-white flex items-center justify-between mt-6 py-4 px-20">
         {["Contact Us", "@2024 NIKE", "Shops", "Company"].map((item, index) => (
           <a className="text-2xl font-bold tracking-wider" key={index}>
             {item}
