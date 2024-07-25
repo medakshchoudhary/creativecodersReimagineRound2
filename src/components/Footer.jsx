@@ -58,9 +58,9 @@ function Footer() {
                   shadowIntensity="1"
                 />
           <ModelViewer
-                  alt="Supreme x Nike Air More Uptempo"
+                  alt="Nike Air Jordan"
                   src="/3dmodels/nike_air_jordan.glb"
-                  poster="/3dmodels/ImageToStl.com_yellow_nike_dunk_low_dusty_olive_from_video_clip.webp"
+                  poster="/public/3dmodels/ImageToStl.com_nike_air_jordan.webp"
                   shadowIntensity="1"
                 />
           </div>
