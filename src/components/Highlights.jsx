@@ -31,11 +31,10 @@ function Highlights() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".topheading",
-        start: "top 60%",
-        end: "top 40%",
+        start: "top 80%",
+        end: "top 50%",
         scrub: 3,
         toggleActions: "play reverse play reverse",
-        markers: true,
       }
     });
 
@@ -59,7 +58,8 @@ function Highlights() {
   }, []);
 
   useEffect(() => {
-    gsap.fromTo(
+    var tl = gsap.timeline();
+    tl.fromTo(
       textRef.current,
       { opacity: 0 },
       {
@@ -74,9 +74,9 @@ function Highlights() {
       }
     );
 
-    gsap.fromTo(
-      ".highlights .highlight1",
-      { y: 50, opacity: 0 },
+    tl.fromTo(
+      ".highlights-container .highlight1",
+      { y: 100, opacity: 0 },
       {
         y: 0,
         opacity: 1,
@@ -89,31 +89,31 @@ function Highlights() {
         }
       }
     );
-    gsap.fromTo(
-      ".highlights .highlight2",
-      { y: 50, opacity: 0 },
+    tl.fromTo(
+      ".highlights-container .highlight2",
+      { y: 100, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         scrollTrigger: {
           trigger: ".highlight2",
-          start: "top 80%",
-          end: "top 40%",
+          start: "top 70%",
+          end: "top 50%",
           scrub: 1,
           toggleActions: "play reverse play reverse",
         }
       }
     );
-    gsap.fromTo(
-      ".highlights .highlight3",
-      { y: 50, opacity: 0 },
+    tl.fromTo(
+      ".highlights-container .highlight3",
+      { y: 100, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         scrollTrigger: {
           trigger: ".highlight3",
-          start: "top 80%",
-          end: "top 40%",
+          start: "top 70%",
+          end: "top 50%",
           scrub: 1,
           toggleActions: "play reverse play reverse",
         }
@@ -157,27 +157,27 @@ function Highlights() {
   }, []);
 
   return (
-    <div className="highlights w-full bg-black flex flex-col text-white pt-20 px-20 pb-20">
+    <div className="highlights w-full bg-black flex flex-col text-white pt-12 px-20 pb-20">
       <div className="topheading flex flex-col gap-3 items-center justify-center mb-20">
         <h1 ref={highlightsRef} className="text-9xl uppercase">Highlights</h1>
         <h1 ref={textRef} className="text-3xl opacity-0">Discover what matches with your personality</h1>
       </div>
       <div className="highlights-container">
-        <div className="highlight1 w-full flex mb-16">
+        <div className="highlight1 w-full flex">
           <img ref={highlight1ImgRef} className="w-80 rounded-3xl" src="/images/highlight1.png" alt="" />
           <div className="details pl-10 flex flex-col justify-center">
             <h1 className="text-6xl font-bold">Embrace the Classic Comfort</h1>
             <p className="text-xl mt-12">Step into timeless style with our featured look of the day, showcasing the epitome of casual elegance. This ensemble features a sleek grey Nike sweatshirt paired with matching joggers, embodying both comfort and modern fashion. The clean lines and understated Nike logo make it a versatile addition to any wardrobe, perfect for lounging or making a statement on the streets. Complete the look with pristine white sneakers, adding a touch of fresh sophistication. Elevate your everyday style with this effortlessly cool outfit, blending simplicity and sportiness in perfect harmony.</p>
           </div>
         </div>
-        <div className="highlight2 w-full flex mt-10 mb-16">
+        <div className="highlight2 w-full flex">
           <div className="details pr-10 flex flex-col justify-center">
             <h1 className="text-6xl font-bold">Effortless Elegance in Grey</h1>
             <p className="text-xl mt-12">Step into timeless style with our featured look of the day, showcasing the epitome of casual elegance. This ensemble features a sleek grey Nike sweatshirt paired with matching joggers, embodying both comfort and modern fashion. The clean lines and understated Nike logo make it a versatile addition to any wardrobe, perfect for lounging or making a statement on the streets. Complete the look with pristine white sneakers, adding a touch of fresh sophistication. Elevate your everyday style with this effortlessly cool outfit, blending simplicity and sportiness in perfect harmony.</p>
           </div>
           <img ref={highlight2ImgRef} className="w-80 rounded-3xl" src="/images/highlight2.png" alt="" />
         </div>
-        <div className="highlight3 w-full flex mt-10">
+        <div className="highlight3 w-full flex">
           <img ref={highlight3ImgRef} className="w-80 rounded-3xl" src="/images/highlight3.png" alt="" />
           <div className="details pl-10 flex flex-col justify-center">
             <h1 className="text-6xl font-bold">Dynamic Court Style</h1>

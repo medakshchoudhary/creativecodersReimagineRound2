@@ -40,7 +40,7 @@ function LastTagline() {
     }, []);
 
     return (
-        <div className="taglinelast w-full py-10 overflow-hidden bg-black flex items-center justify-center flex-col">
+        <div className="taglinelast w-full h-max py-5 overflow-hidden bg-black flex items-center justify-center flex-col">
             <h1 className="heading1 text-[10vw] font-extrabold uppercase text-[#DA0007] leading-none">Winning isn&apos;t</h1>
             <h1 className="heading2 text-[10vw] font-extrabold uppercase text-[#DA0007] leading-none">for everyone</h1>
         </div>
