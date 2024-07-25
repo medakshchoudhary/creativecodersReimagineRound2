@@ -48,33 +48,54 @@ function Footer() {
       <div className="creativecoders w-full h-fit">
         <div className="container w-full h-[80vh] flex flex-col items-center justify-center">
           <div className="3dstore">
-            <h1 className="text-7xl text-white font-extrabold uppercase">Introducing 3d store</h1>
+            <h1 className="text-7xl text-white font-extrabold uppercase">
+              Introducing 3d store
+            </h1>
           </div>
           <div className="3dmodelcontainer w-full h-full flex items-center justify-center">
-          <ModelViewer
-                  alt="Supreme x Nike Air More Uptempo"
-                  src="/3dmodels/yellow_nike_dunk_low_dusty_olive_from_video_clip.glb"
-                  poster="/3dmodels/ImageToStl.com_yellow_nike_dunk_low_dusty_olive_from_video_clip.webp"
-                  shadowIntensity="1"
-                />
-          <ModelViewer
-                  alt="Nike Air Jordan"
-                  src="/3dmodels/nike_air_jordan.glb"
-                  poster="/3dmodels/ImageToStl.com_nike_air_jordan.webp"
-                  shadowIntensity="1"
-                />
+            <ModelViewer
+              alt="Supreme x Nike Air More Uptempo"
+              src="/3dmodels/yellow_nike_dunk_low_dusty_olive_from_video_clip.glb"
+              poster="/3dmodels/ImageToStl.com_yellow_nike_dunk_low_dusty_olive_from_video_clip.webp"
+              shadowIntensity="1"
+            />
+            <ModelViewer
+              alt="Nike Air Jordan"
+              src="/3dmodels/nike_air_jordan.glb"
+              poster="/3dmodels/ImageToStl.com_nike_air_jordan.webp"
+              shadowIntensity="1"
+            />
           </div>
           <div className="showmore">
-            <a className="text-2xl bg-white text-black rounded-full py-2 px-5 font-extrabold uppercase">Show More</a>
+            <a className="text-2xl bg-white text-black rounded-full py-2 px-5 font-extrabold uppercase">
+              Show More
+            </a>
           </div>
         </div>
       </div>
-      <div className="lastline w-full h-fit text-white flex items-center justify-between mt-6 py-4 px-20">
-        {["Contact Us", "@2024 NIKE", "Shops", "Company"].map((item, index) => (
-          <a className="text-2xl font-bold tracking-wider" key={index}>
-            {item}
-          </a>
-        ))}
+      <div className="end flex items-center justify-between px-16 py-4">
+        <div className="credits ">
+          <h1 className="text-white text-3xl">Made by : CreativeCoders</h1>
+        </div>
+        <div className="coffee ">
+          <h1 className="text-white text-3xl">Buy Us Coffee☕</h1>
+        </div>
+        <div className="lastline h-fit text-white flex flex-col gap-1 items-start justify-between">
+          <div className="wrapper flex gap-6">
+            {["Contact Us", "@2024 NIKE"].map((item, index) => (
+              <a className="text-2xl" key={index}>
+                {item}
+              </a>
+            ))}
+          </div>
+          <div className="wrapper-2 flex gap-20">
+            {["Shops", "Company"].map((item, index) => (
+              <a className="text-2xl" key={index}>
+                {item}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
