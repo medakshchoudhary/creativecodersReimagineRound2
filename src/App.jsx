@@ -9,6 +9,7 @@ import Highlights from './components/Highlights';
 import Video from './components/Video';
 import LastTagline from './components/LastTagline';
 import LocomotiveScroll from 'locomotive-scroll';
+import Footer from './components/Footer';
 
 
 
@@ -30,9 +31,10 @@ function App() {
       {isLoadingComplete && <ShoeCarouselContainer /> }
       {isLoadingComplete && <Taglines />}
       {isLoadingComplete && <BuyNow />}
+      {isLoadingComplete && <LastTagline />}
       {isLoadingComplete && <Video />}
       {isLoadingComplete && <Highlights />}
-      {isLoadingComplete && <LastTagline />}
+      {isLoadingComplete && <Footer />}
     </div>
   );
 }

@@ -157,7 +157,7 @@ function Highlights() {
   }, []);
 
   return (
-    <div className="highlights w-full bg-black flex flex-col text-white pt-12 px-20 pb-20">
+    <div className="highlights w-full h-fit bg-black flex flex-col text-white pt-12 px-20 pb-20">
       <div className="topheading flex flex-col gap-3 items-center justify-center mb-20">
         <h1 ref={highlightsRef} className="text-9xl uppercase">Highlights</h1>
         <h1 ref={textRef} className="text-3xl opacity-0">Discover what matches with your personality</h1>
