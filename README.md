@@ -1,6 +1,6 @@
-# Zomato Reimagined
+# Nike Reimagined
 
-This is a reimagined form of the main Zomato website. This is the Zomato Reimagined website with a totally new look. This project is for a competition known as Re-Imagined by Sheryians Coding School.
+This is a reimagined form of the main Zomato website. This is the Zomato Reimagined website with a totally new look. This project is for a competition known as Reimagined by Sheryians.
 
 ## Installation
 
@@ -9,13 +9,13 @@ To get started with this project, follow these steps:
 1. Download the zip file or clone the repository:
 
     ```bash
-    git clone https://github.com/medakshchoudhary/creativecodersReimagineRound1.git
+    git clone https://github.com/medakshchoudhary/creativecodersReimagineRound2.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd creativecodersReimagineRound1
+    cd creativecodersReimagineRound2
     ```
 
 3. Install the dependencies:
